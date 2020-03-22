@@ -1,2 +1,3 @@
 # tribute-page
-Tribute page of my favorite band
+
+A tribute page for my favorite band: Soda Stereo
