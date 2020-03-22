@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tribute Page</title>
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <main id="main">
-      <header class="header">
+      <header data-aos="fade-down">
         <h1 id="title">Soda Stereo</h1>
         <p id="subtitle">
           The most important and influential band in the entire history of Latin
@@ -28,7 +29,9 @@
         </figure>
       </header>
       <main>
-        <h2 id="tribute-info">Here's a time line of Soda Stereo's Journey:</h2>
+        <h2 id="tribute-info" data-aos="fade-left">
+          Here's a time line of Soda Stereo's Journey:
+        </h2>
         <ol>
           <li>
             <strong>1982</strong> - Soda Stereo nace a principios de 1982 con la
@@ -184,27 +187,31 @@
           </li>
         </ol>
       </main>
-      <aside>
-        <p>
-          ¡No solo no hubiéramos sido nada sin ustedes, sino con toda la gente
-          que estuvo a nuestro alrededor desde el comienzo; algunos siguen hasta
-          hoy! ¡Gracias... totales!"<br />
-          -- Gustavo Cerati
-        </p>
-      </aside>
-      <footer>
-        <p id="footer-div">
-          If you have time, you should read more about this incredible Latin
-          American Rock Band on their
-          <a
-            id="tribute-link"
-            href="https://www.sodastereo.com/"
-            target="_blank"
-            >Official WebSite
-          </a>
-          .
-        </p>
-      </footer>
+      <div data-aos="fade-up">
+        <aside>
+          <p>
+            ¡No solo no hubiéramos sido nada sin ustedes, sino con toda la gente
+            que estuvo a nuestro alrededor desde el comienzo; algunos siguen
+            hasta hoy! ¡Gracias... totales!"<br />
+            -- Gustavo Cerati
+          </p>
+        </aside>
+        <footer>
+          <p id="footer-div">
+            If you have time, you should read more about this incredible Latin
+            American Rock Band on their
+            <a
+              id="tribute-link"
+              href="https://www.sodastereo.com/"
+              target="_blank"
+              >Official WebSite
+            </a>
+            .
+          </p>
+        </footer>
+      </div>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
